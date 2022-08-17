@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+  <meta charset="UTF-8">
+  <title>ɴᴇᴜʀᴀʟ ɴᴇᴛᴡᴏʀᴋ ᴀᴘɪ</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  
+</head>
+<body>
+  <div class="header">
+    
+  </div>
+  
+  <div class="boxx box-down cyan">
+    <h1>𝐏𝐫𝐞𝐝𝐢𝐜𝐭𝐢𝐨𝐧 𝐎𝐟 𝐂𝐮𝐬𝐭𝐨𝐦𝐞𝐫 𝐂𝐡𝐞𝐜𝐤-𝐢𝐧𝐬</h1>
+    <h1>Neural Network</h1>
+
+    <form action="{{ url_for('predict')}}"method="post">
+      <button type="submit" class="btn btn-block">𝚂𝚑𝚘𝚠 𝙰𝚌𝚌𝚞𝚛𝚊𝚌𝚢</button>
+    </form>
+
+  <div class="row1-container" >
+    <div class="box red">
+      <h2>𝐀𝐂𝐂𝐔𝐑𝐀𝐂𝐘</h2>
+      <p>Accuaracy of the model is {{ prediction_text }}</p>
+      <img src="https://assets.codepen.io/2301174/icon-calculator.svg" alt="">
+    </div>
+
+    <br>
+
+  </div>
+  <form action="{{ url_for('table')}}">
+    <button type="submit" class="btn  btn-block " >𝚂𝚑𝚘𝚠 𝙾𝚞𝚝𝚙𝚞𝚝</button>
+  </form>
+</div>
+
+</body>
+
+<footer>
+  <p class="attribution">
+    Created By <a href="" target="_blank">Aniruddha Mondal</a>.
+    Coded By <a href="#">Software Engineer</a>.
+  </p>
+</footer>
+
+</html>
+

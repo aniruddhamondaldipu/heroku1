@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>ᴏᴜᴛᴘᴜᴛ ᴛᴀʙʟᴇ</title>			
+	</head>
+	<body>
+        <h1  style="align-items:center;align-content:center;text-align: center;">ᴏᴜᴛᴘᴜᴛ ᴛᴀʙʟᴇ</h1>
+		<div align="center">
+			<table>
+				<h1>
+					{% for table in tables %}
+					<h2>{{titles[loop.index]}}</h2>							
+					{{ table|safe }}
+					{% endfor %}	
+				</h1>
+			</table>
+		</div>
+	</body>
+</html>
